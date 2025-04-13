@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Phase When I Remembered Who I Am</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(180deg, #f7f5f0, #dfe4ea);
+      color: #2f2f2f;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #444;
+    }
+    blockquote {
+      font-style: italic;
+      background: rgba(255,255,255,0.6);
+      border-left: 4px solid #bbb;
+      margin: 1.5rem 0;
+      padding: 0.75rem 1rem;
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+      gap: 1rem;
+    }
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 0.5rem;
+      flex-shrink: 0;
+    }
+    .carousel-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel img {
+      scroll-snap-align: center;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Phase When I Remembered Who I Am</h1>
+  <p><strong>Vipul Anand | April 2025</strong></p>
+
+  <h2>What surfaced:</h2>
+  <p>I realized that the heaviness I felt about selling our ancestral land wasn't just about land. It was about identity, legacy, and the child in me who never felt ready to let go of the one thing that felt like it was “mine.” This wasn’t immaturity. This was buried loyalty—to my family, to the soil, to a past that shaped me, but no longer defines me.</p>
+
+  <h2>The buried belief I unearthed:</h2>
+  <blockquote>
+    “If I let go of the land, I will lose the last piece of who I am.”
+  </blockquote>
+
+  <h2>What I understand now:</h2>
+  <ul>
+    <li>I am more than inheritance.</li>
+    <li>I am more than duty.</li>
+    <li>I am more than survival.</li>
+  </ul>
+  <p>I am the one who chooses. And choosing freedom doesn’t dishonor the past—it honors the life it gave me by letting it now serve my future.</p>
+
+  <h2>Message to the boy in me who held on so long:</h2>
+  <blockquote>
+    “You did well to guard the legacy. You were never weak. But now, I’ve got this. You can rest. You don’t have to hold it anymore.”
+  </blockquote>
+
+  <h2>If I ever forget this, read this line again:</h2>
+  <blockquote>
+    “Letting go is not the end of loyalty—it is the beginning of liberation.”
+  </blockquote>
+
+  <h2>A deeper freedom beyond the land:</h2>
+  <p>As I sit with the deeper truths, I realize even my attachment to my own body is an invisible thread. If I release this—if I stop identifying with the body itself—I become free not only from land, legacy, and expectation, but from <em>everything</em>.</p>
+  <blockquote>
+    “I honor this body, but I am not bound by it.
+    I witness it, care for it, but I am not limited to it.
+    I am the one who sees, not the seen.”
+  </blockquote>
+  <p>Attachment is not logical. It is emotional. But it can dissolve under the quiet gaze of awareness. And that awareness is who I truly am.</p>
+
+  <h2>Moments from My Life</h2>
+  <div class="carousel-container">
+    <div class="carousel-track" id="carousel-track">
+      <!-- JS will append image elements here -->
+    </div>
+  </div>
+
+  <footer>
+    This page is a sacred bookmark in Vipul's story—crafted in truth, returned to in remembrance.
+  </footer>
+
+  <script>
+    // Dynamically populate carousel with image files from 'img' folder
+    const folderPath = 'img';
+    const imageCount = 10; // Adjust as you add more images
+    const track = document.getElementById('carousel-track');
+
+    for (let i = 1; i <= imageCount; i++) {
+      const img = document.createElement('img');
+      img.src = `${folderPath}/photo${i}.jpg`;
+      img.alt = `Memory ${i}`;
+      track.appendChild(img);
+    }
+  </script>
+</body>
+</html>
